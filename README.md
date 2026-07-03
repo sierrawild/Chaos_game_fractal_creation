@@ -26,16 +26,27 @@ Open project.py and run it. No extra setup. All controls are on the screen in th
 
 ##### Controls:
 Arrow up: Adds a side to the main polygon
+
 Arrow down: Subtracts a side from the main polygon
+
 Arrow left: -10 speed
+
 Arrow right: +10 speed
+
 Right bracket: +0.1 ratio
+
 Left bracket: -0.1 ratio
+
 Plus sign above the bracket: +0.01 ratio
+
 Minus sign above the bracket: -0.01 ratio
+
 P: Change colours by choosing a random palette
+
 R: Reset the whole drawing
+
 B: Show/hide the main polygon
+
 Space: Pause
 
 Note that speed is printed to the console when you press the right or left arrow. It does not appear in the UI.
