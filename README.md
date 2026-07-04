@@ -1,9 +1,9 @@
-# Chaos game - Fractal creation
+# Chaos game - Fractal Generator
 
 ### Video Demo: https://youtu.be/kV8x-fR8O-U
 
 ### Description:
-An interactive pygame visualizer for creating chaos game fractals. You can change the polygon, ratio, drawing speed, colour palette, and visibility of the main polygon while the fractal is being drawn.
+An interactive pygame visualizer for generating chaos game fractals. You can change the polygon, ratio, drawing speed, colour palette, and visibility of the main polygon while the fractal is being drawn.
 
 #### Screenshots:
 

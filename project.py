@@ -12,6 +12,7 @@ def main():
     
     ### pygame setup ###
     pygame.init()
+    pygame.display.set_caption("Chaos Game Fractal Generator")
     clock = pygame.time.Clock()
     
     ### import random palette
@@ -98,7 +99,7 @@ def main():
         
         shape = get_polygon_name(sides)
         text = ['CHAOS GAME',
-                'Fractal creation',
+                'Fractal Generator',
                 f'',
                 shape,
                 f'',
