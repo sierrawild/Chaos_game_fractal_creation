@@ -1,6 +1,8 @@
 # Chaos game - Fractal Generator
 
 ### Video Demo: https://youtu.be/kV8x-fR8O-U
+### Online version playable in a browser
+https://sierra-wild-3d.itch.io/chaos-game-fractal-generator
 
 ### Description:
 An interactive pygame visualizer for generating chaos game fractals. You can change the polygon, ratio, drawing speed, colour palette, and visibility of the main polygon while the fractal is being drawn.
