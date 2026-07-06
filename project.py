@@ -123,8 +123,11 @@ def main():
                     filetypes=[("PNG image", "*.png")],
                     initialfile="chaos_game_fractal.png",)
 
-                if filename:
-                    pygame.image.save(screen, filename)
+                    try:
+                        pygame.image.save(screen, filename)
+                    except pygame.error:
+                        print('File not saved')
+                        
             ###
         ###
         ### Drawing dots
