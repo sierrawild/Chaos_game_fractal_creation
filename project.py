@@ -1,4 +1,5 @@
 import pygame, random, math, palettes
+from tkinter import filedialog
 
 def main():
     ### variables
@@ -114,6 +115,16 @@ def main():
                     
                 elif event.key == pygame.K_LEFTBRACKET:
                     ratio = clamp(ratio - 0.1, 0, 10)
+                    
+                # save screenshot 
+                elif event.key == pygame.K_s:
+                    filename = filedialog.asksaveasfilename(
+                    defaultextension=".png",
+                    filetypes=[("PNG image", "*.png")],
+                    initialfile="chaos_game_fractal.png",)
+
+                if filename:
+                    pygame.image.save(screen, filename)
             ###
         ###
         ### Drawing dots
@@ -203,17 +214,18 @@ def main():
             pygame.draw.rect(screen, palette["colors"][0], (x2,y2, backdrop_w + padding * 2, backdrop_h + padding * 4), width=5, border_radius= 20) # backdrop
             
             text2 = ['CONTROLS',
-                    'UP:','+1 side',
-                    'Down:','-1 side',
-                    'Left:','speed -',
-                    'Right:','speed +',
+                    'UP','+1 side',
+                    'Down','-1 side',
+                    'Right','speed +',
+                    'Left','speed -',
                     ']','ratio up',
                     '[','ratio down',
-                    'P:','palette',
-                    'R:','reset',
+                    'P','palette',
+                    'R','reset',
                     'B','border',
                     'H','hide UI',
-                    'Space:','pause',]
+                    'S','save img',
+                    'Space','pause',]
 
             for line in enumerate(text2):
                 text_surface2 = font.render(line[1], antialias=True, color=palette["colors"][0])

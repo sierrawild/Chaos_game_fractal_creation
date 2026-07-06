@@ -51,6 +51,8 @@ B: show/hide the main polygon
 
 H: show/hide UI
 
+S: Save screenshot
+
 Space: pause/resume
 
 
